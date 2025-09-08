@@ -126,7 +126,57 @@
             margin-left: auto;
             margin-right: auto;
         }
-    </style>
+     /* Post Navigation Styles */
+        .post-navigation {
+            display: flex;
+            flex-direction: column; /* 세로 정렬 */
+            gap: 10px; /* 링크 사이 간격 */
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .post-link {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .post-link:hover {
+            background-color: #e0e0e0;
+            color: #007bff;
+        }
+
+        .post-link .arrow {
+            font-size: 1.2em;
+            color: #007bff;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .post-link.prev {
+            justify-content: flex-start;
+        }
+
+        .post-link.next {
+            justify-content: flex-end;
+        }
+
+        .post-link.prev .arrow {
+            transform: none; /* ▲ 기본 방향 */
+            margin-left: -5px; /* 화살표가 더 붙도록 조정 */
+        }
+
+        .post-link.next .arrow {
+            transform: none; /* ▼ 기본 방향 */
+            margin-right: -5px; /* 화살표가 더 붙도록 조정 */
+        }  </style>
 </head>
 <body>
 
@@ -160,7 +210,11 @@
         <p>특히, 이번 전시에서는 시노펙스 AI 기술을 적용한 플랫폼 **‘넥스케어(Nexcare)’**가 공개될 예정입니다.</p>
         <p>‘넥스케어’는 위치 기반의 병원 추천, 병원 정보 확인과 예약이 가능하며, AI 챗봇을 통한 상담 및 커뮤니티 코너에서 담당 전문의와 혈액투석 환자를 위한 상담이 가능합니다. 또한, 최근 지분투자를 진행한 힐넥서스가 독점 계약되어 있는 한국, 대만, 홍콩, 일본 등 세계여행투석네트워크(WTDM)에 참여하고 있는 105개 혈액투석 전문 센터를 통해 여행 및 출장 중에도 적합한 혈액투석 센터를 연계하여 안정적인 치료를 받을 수 있는 여행 투석 기능을 제공하는 프로그램으로 업그레이드도 진행 중입니다.</p>
     </div>
-</div>
+<div class="post-navigation">
+        <a href="https://goodlight1234.github.io/news13/" class="post-link prev"><span class="arrow">▲</span> 시노펙스,'힐넥서스'와 여행투석 플랫폼 사업제휴, 지분 60% 확보! </a>
+        <a href="https://goodlight1234.github.io/news15/" class="post-link next">시시노펙스, 롯데케미칼 수처리사업 인수 계약 체결!<span class="arrow">▼</span></a>
+    </div></div>
+
 
 </body>
 </html>
